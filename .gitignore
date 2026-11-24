@@ -1,0 +1,105 @@
+# ============================================================
+# College ERP — .gitignore
+# ============================================================
+
+# --------------------------
+# Environment & Secrets
+# --------------------------
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+credentials.json
+
+# --------------------------
+# Python / Backend
+# --------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+*.egg
+.mypy_cache/
+.ruff_cache/
+
+# --------------------------
+# Database files (SQLite)
+# --------------------------
+*.db
+*.sqlite
+*.sqlite3
+backend/backups/
+
+# --------------------------
+# Node / Frontend
+# --------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+frontend/dist/
+frontend/build/
+
+# --------------------------
+# Vite / Build artifacts
+# --------------------------
+*.local
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# --------------------------
+# OS & Editor
+# --------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --------------------------
+# Logs & Temp
+# --------------------------
+*.log
+logs/
+*.tmp
+*.temp
+.cache/
+
+# --------------------------
+# Alembic (keep migrations, exclude pycache)
+# --------------------------
+backend/alembic/__pycache__/
+backend/alembic/versions/__pycache__/
+
+# --------------------------
+# Test artifacts
+# --------------------------
+.tox/
+coverage.xml
+test-results/
